@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div *ngIf="user" class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4">Personal Information</h2>
+  
+            <dl class="row">
+              <dt class="col-sm-4">First Name:</dt>
+              
+              <dd class="col-sm-8">{{ user.FirstName  }}</dd>
+  
+              <dt class="col-sm-4">Last Name:</dt>
+              <dd class="col-sm-8">{{ user.LastName }}</dd>
+  
+              <dt class="col-sm-4">Email Address:</dt>
+              <dd class="col-sm-8">{{ user.EmailAddress }}</dd>
+  
+              <dt class="col-sm-4">Phone Number:</dt>
+              <dd class="col-sm-8">{{ user.PhoneNumber }}</dd>
+  
+              <dt class="col-sm-4">Street Name:</dt>
+              <dd class="col-sm-8">{{ user.StreetName }}</dd>
+  
+              <dt class="col-sm-4">Postal Code:</dt>
+              <dd class="col-sm-8">{{ user.PostalCode }}</dd>
+  
+              <dt class="col-sm-4">City:</dt>
+              <dd class="col-sm-8">{{ user.City }}</dd>
+            </dl>
+  
+            <div class="text-center">
+              <button (click)="edit()" class="btn btn-primary">Edit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
